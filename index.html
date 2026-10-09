@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+  </head>
+     <body>
+      <!-- Hamburger menu button (visible on tablet/mobile only) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="منو">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Dark overlay for mobile sidebar -->
+      <div class="menu-overlay" id="menuOverlay"></div>
+
+      <div class="container">
+        <div class="right-container" id="rightSidebar">
+          <div class="title-right">
+            <h2>وبلاگ پیشرفته</h2>
+            <div class="just-border1"></div>
+            <p>آزمون یک موضوع وبلاگ چند نویسنده و شخصی برای پلت فرم وردپرس است. دارای طراحی کم، پاسخگو، محتوا و چند ستون است. موجود در تم فارست.
+            </p>
+          </div>
+          <form class="form-search-right">
+            <label for="search"><i class="fas fa-search search-icon"></i></label>
+            <input type="search" id="search" class="form-control search-input" placeholder="جستجو...">
+            <button type="search" class="search-button"><i class="fas fa-arrow-circle-left"></i></button>
+          </form>
+          <div class="navbar-right">
+            <a href="#">کد کوتاه</a>
+            <a href="#">سبک های پست<i class="fas fa-angle-left"></i></a>
+            <a href="#">امکانات<i class="fas fa-angle-left"></i></a>
+            <a href="#">سبک تاریک</a>
+            <a href="#">خرید</a>
+          </div>
+        </div>
+        <div class="center-container">
+          <div class="img-btn">
+            <img src="images/image-center.jpg">
+            <a href="">مدیریت سیستم</a>
+          </div>
+          <div class="bold-desc">
+            <h1>نصب و راه اندازی وی پی ان در دبیان و اوبونتو</h1>
+            <p>در این آموزش، ما درباره چگونگی استفاده از تاینک، یک سرور مجازی، برای ایجاد یک وی پی ان امن که سرورهای شما می توانند ارتباط برقرار کنند، مانند شبکه های محلی هستند. ما همچنین نشان خواهیم داد که چگونه از تاینک استفاده کنیم تا یک تونل ایمن را به یک شبکه خصوصی ایجاد کنیم. ما از سرورهای اوبونتو ۱۴.۰۴ استفاده خواهیم کرد، اما [...]</p>
+          </div>
+          <div class="link-center">
+            <a id="link1" href="#">ادامه مطلب...</a>
+            <a id="link2" href="#">هاروی اسکات</a>
+            <a id="link3" href="#">۲۴ خرداد ۱۳۹۶</a>
+            
+          </div>
+          <div class="just-border2"></div>
+        </div>
+        <div class="left-container">
+          <div class="title-left">
+            <h2>آخرین مقالات</h2>
+            <div class="just-border3">
+            </div>
+          </div>
+          <div class="p-d-d-1">
+            <img src="images/Picture1.jpg">
+            <div class="desc-det-1">
+              <a href="#">نصب و راه اندازی وی پی ان در دبیان و اوبونتو</a>
+              <p>۲۴ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="p-d-d-2">
+            <img src="images/Picture2.jpg">
+            <div class="desc-det-2">
+              <a href="#">طراحی رسپانسیو و موبایل</a>
+              <p>۲۰ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="p-d-d-2">
+            <img src="images/Picture3.jpg">
+            <div class="desc-det-2">
+              <a href="#">پیکربندی اولیه سرور و راه اندازی در &nbsp; دبیان ...</a>
+              <p>۱۸ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="p-d-d-2">
+            <img src="images/Picture4.jpg">
+            <div class="desc-det-2">
+              <a href="#">زمان پاسخ سریعتر با حافظه معکوس پروکسی</a>
+              <p>۱۶ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="p-d-d-2">
+            <img src="images/Picture5.jpg">
+            <div class="desc-det-2">
+              <a href="#">مقدمه طراحی الگوها جاوا اسکریپت<a>
+              <p>۱۴ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="p-d-d-2">
+            <img src="images/Picture6.jpg">
+            <div class="desc-det-2">
+              <a href="#">اچ تی تی پی ساده در نود جی اس<a>
+              <p>۲۴ خرداد ۱۳۹۶</p>
+            </div>
+          </div>
+          <div class="footer-left">
+            <img src="images/Picture7.jpg">
+            <a id="link-footer-left1" href="#">مدیریت سیستم</a>
+            <a id="link-footer-left2" href="#">پیکربندی اولیه سرور و راه اندازی در دبیان ...</a>
+            <p>هاروی اسکات / ۲۰ خرداد ۱۳۹۶</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Responsive sidebar toggle script -->
+      <script>
+        (function() {
+          var toggle = document.getElementById('menuToggle');
+          var sidebar = document.getElementById('rightSidebar');
+          var overlay = document.getElementById('menuOverlay');
+
+          function openMenu() {
+            sidebar.classList.add('open');
+            overlay.classList.add('active');
+            toggle.innerHTML = '<i class="fas fa-times"></i>';
+          }
+
+          function closeMenu() {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('active');
+            toggle.innerHTML = '<i class="fas fa-bars"></i>';
+          }
+
+          toggle.addEventListener('click', function() {
+            if (sidebar.classList.contains('open')) {
+              closeMenu();
+            } else {
+              openMenu();
+            }
+          });
+
+          overlay.addEventListener('click', closeMenu);
+        })();
+      </script>
+    </body>
+</html>
